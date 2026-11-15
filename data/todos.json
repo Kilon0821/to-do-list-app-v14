@@ -1,0 +1,130 @@
+[
+  {
+    "id": 9,
+    "title": "test",
+    "description": "test again",
+    "status": "pending",
+    "categories": [
+      "Work",
+      "Personal",
+      "Urgent"
+    ],
+    "due_date": "2026-11-20",
+    "completed_at": null,
+    "created_at": "2026-11-15T07:20:00.049Z",
+    "modified_at": "2026-11-15T07:20:35.594Z",
+    "deleted_at": null
+  },
+  {
+    "id": 1,
+    "title": "1. Basic Functionality",
+    "description": "Implement list, add, delete, edit, mark complete/incomplete, set due date, and multiple categories (Work, Personal, Urgent) selection.",
+    "status": "complete",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": "2026-11-15T07:06:44.578Z",
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": "2026-11-15T07:06:44.578Z",
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "title": "2. Pagination",
+    "description": "Implement pagination with configurable limit (5, 10, 15, or 20), navigation controls (Previous, Next), and page status indicators.",
+    "status": "complete",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": "2026-11-15T07:06:45.401Z",
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": "2026-11-15T07:06:45.401Z",
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "title": "3. Searching, Filtering and Sorting",
+    "description": "Implement keyword search, status filtering, category filtering, and sorting by due date, created date, or completed date with asc/desc order.",
+    "status": "complete",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": "2026-11-15T07:06:46.289Z",
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": "2026-11-15T07:06:46.289Z",
+    "deleted_at": null
+  },
+  {
+    "id": 4,
+    "title": "4. Persistent Storage",
+    "description": "Research and implement local storage or file-based JSON persistence to ensure tasks survive page reloads and application restarts.",
+    "status": "complete",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": "2026-11-15T06:58:22.042Z",
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": "2026-11-15T07:06:51.486Z",
+    "deleted_at": null
+  },
+  {
+    "id": 5,
+    "title": "5. Import To-Do List",
+    "description": "Implement a feature to allow users to import tasks in bulk through CSV or Excel files.",
+    "status": "pending",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": null,
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 6,
+    "title": "6. Export as Report",
+    "description": "Implement an export feature allowing users to download to-do items and reports in Excel format.",
+    "status": "pending",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": null,
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 7,
+    "title": "7. Calendar View (Optional, Extra)",
+    "description": "Create a calendar component displaying tasks by due dates with color-coded categories using a library like react-calendar or react-big-calendar.",
+    "status": "pending",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": null,
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 8,
+    "title": "8. Drag-and-Drop Reordering (Optional, Extra)",
+    "description": "Allow users to reorder tasks by dragging and dropping them using a library like react-beautiful-dnd or react-dnd.",
+    "status": "pending",
+    "categories": [
+      "Work"
+    ],
+    "due_date": "2026-11-21",
+    "completed_at": null,
+    "created_at": "2026-11-15T06:58:22.042Z",
+    "modified_at": null,
+    "deleted_at": null
+  }
+]
