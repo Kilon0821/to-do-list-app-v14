@@ -46,7 +46,7 @@ The application stores to-do items in a JSON file (`data/todos.json`). Each to-d
   "id": 1, // Unique identifier for the to-do item
   "title": "Basic Functionality", // Title of the to-do item
   "description": "Implement list, add, delete, edit, mark complete/incomplete, set due date, and multiple categories (Work, Personal, Urgent) selection.", // Description of the to-do item
-  "status": "pending", // Status of the to-do item (e.g., pending, completed)
+  "status": "pending", // Status of the to-do item (e.g., pending, complete)
   "categories": ["Work"], // Categories associated with the to-do item
   "due_date": "2026-11-21", // Due date of the to-do item
   "completed_at": null, // Date and time when the to-do item was completed
@@ -61,7 +61,7 @@ The application stores to-do items in a JSON file (`data/todos.json`). Each to-d
 - **id**: A unique identifier for each to-do item.
 - **title**: The title of the to-do item.
 - **description**: A detailed description of the to-do item.
-- **status**: The status of the to-do item (e.g., pending, completed).
+- **status**: The status of the to-do item (e.g., pending, complete).
 - **categories**: An array of categories associated with the to-do item.
 - **due_date**: The due date of the to-do item in `YYYY-MM-DD` format.
 - **completed_at**: The date and time when the to-do item was completed (if applicable).
@@ -89,7 +89,7 @@ The following components are used to manage and display the to-do list items:
 ### Filters.js
 
 - **Description**: Component to apply filters to the to-do list.
-- **Usage**: Provides options to filter tasks by status (pending, completed), categories, and due date.
+- **Usage**: Provides options to filter tasks by status (pending, complete), categories, and due date.
 
 ### TodoItem.js
 

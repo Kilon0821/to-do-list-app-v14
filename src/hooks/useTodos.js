@@ -21,13 +21,13 @@ export default function useTodos() {
       .catch((err) => console.error('Failed to fetch todos:', err));
   }, []);
 
-  const addTodo = async (title, description, categories = ['Work'], due_date = '') => {
+  const addTodo = async (title, description, status = 'pending', categories = ['Work'], due_date = '') => {
     if (!title.trim()) return;
     try {
       const res = await fetch('/api/todos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, description, categories, due_date }),
+        body: JSON.stringify({ title, description, status, categories, due_date }),
       });
       const newTodo = await res.json();
       setTodos([newTodo, ...todos]);
@@ -94,11 +94,25 @@ export default function useTodos() {
     }
   };
 
+  const fetchTodos = async () => {
+    try {
+      const res = await fetch('/api/todos');
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      setTodos(Array.isArray(data) ? data : (data.data ?? []));
+    } catch (err) {
+      console.error('Failed to fetch todos:', err);
+    }
+  };
+
   return {
     todos,
     addTodo,
     editTodo,
     deleteTodo,
     toggleTodo,
+    fetchTodos,
   };
 }

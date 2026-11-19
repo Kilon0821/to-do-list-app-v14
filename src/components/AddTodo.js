@@ -22,7 +22,7 @@ export default function AddTodo({ show, onClose, onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return;
-    onAdd(title, description, categories, dueDate);
+    onAdd(title, description, 'pending', categories, dueDate);
     setTitle('');
     setDescription('');
     setCategories(['Work']);
